@@ -4,7 +4,7 @@ import random
 import os
 
 def lambda_handler(event, context):
-    bucket = 'obligations'
+    bucket = os.environ['BUCKET_NAME']
     key = 'catfacts.json'
     
     try:
